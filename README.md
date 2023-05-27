@@ -23,15 +23,15 @@
     <br>
     <strong>Trancista</strong>
     <br>
-    <a href="https://www.instagram.com/gabrielle_santos_afro_hair/" target="_blank" style="text-decoration: none">
+    <a href="https://www.instagram.com/gabrielle_santos_afro_hair/">
         @gabrielle_santos_afro_hair
     </a>
 </p>
 
 # 💻 Desenvolvedores
 - <a href="">Geovanny Diniz</a>
-- <a href="https://github.com/RaquelStefany/" target="_blank">Raquel Stefany</a>
-- <a href="https://github.com/valeria-ferreira/" target="_blank">Valéria Ferreira</a>
+- <a href="https://github.com/RaquelStefany/">Raquel Stefany</a>
+- <a href="https://github.com/valeria-ferreira/">Valéria Ferreira</a>
 
 # 💻 Tecnologias
 <p>  
