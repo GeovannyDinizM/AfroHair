@@ -302,6 +302,10 @@ main #servicos .servico div {
     -o-border-radius: 0 0 10px 10px;
 }
 
+main #servicos .servico:hover div {
+    background-color: #cab8c6;
+}
+
 main #servicos .servico h3 {
     margin: 0;
 }
