@@ -30,6 +30,7 @@
 
 # 💻 Desenvolvedores
 - <a href="https://github.com/GeovannyDinizM/">Geovanny Diniz</a>
+- <a href="">Igor Pinheiro</a>
 - <a href="https://github.com/RaquelStefany/">Raquel Stefany</a>
 - <a href="https://github.com/valeria-ferreira/">Valéria Ferreira</a>
 
