@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Afro Hair é um site comercial e informativo dedicado ao salão de beleza especializado em cabelos afro.">
     <title>
-        Inicio - Afro Hair
+        Contato - Afro Hair
     </title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -52,58 +52,85 @@
         </nav>
     </header>
     <main>
-        <section id="header">
-            <div>
-                <div>
-                    <h1>
-                        <span>
-                            Salão
-                        </span>
-                        Afro Hair
-                    </h1>
-                    <h3>
-                        Aqui você sai com o cabelo dos sonhos.
-                    </h3>
-                    <a href="#servicos">
-                        Serviços
-                    </a>
-                </div>
-                <img src="assets/img/gabrielle.JPG" alt="Gabrielle Santos, fundadora do salão de beleza especializado em tranças Afro Hair, posa em um body preto e jaqueta jeans azul claro. Ela usa brinco de argola grande, colar de elástico preto com um adereço de prata no pescoço e tem cabelos cacheados e vermelhos, com um penteado no topo da cabeça com alguns cachos como franja. Ela está em frente a um fundo cinza, olhando para a câmera." id="imageHeader">
-            </div>
+        <section id="header" style="padding: 0;">
             <a href="#nav" id="top">
                 <i class='bx bx-up-arrow-alt'></i>
             </a>
         </section>
-        <section id="sobre">
+        <section id="contato">
             <div>
-                <img src="assets/img/gabrielle.JPG" alt="Gabrielle Santos, fundadora do salão de beleza especializado em tranças Afro Hair, posa em um body preto e jaqueta jeans azul claro. Ela usa brinco de argola grande, colar de elástico preto com um adereço de prata no pescoço e tem cabelos cacheados e vermelhos, com um penteado no topo da cabeça com alguns cachos como franja. Ela está em frente a um fundo cinza, olhando para a câmera.">
-                <span></span>
-            </div>
-            <div>
-                <h1>
-                    -- Sobre --
-                </h1>
-                <div>
+                <form action="https://formspree.io/f/mdovvpqy" method="post">
+                    <h1>
+                        Entre em Contato
+                    </h1>
                     <p>
-                        Meu nome é Gabrielle Santos e sou a fundadora do salão de beleza Gabrielle Santos Afro Hair.
+                        Sinta-se livre para contactar-nos a qualquer hora. Nós entraremos em contato com você assim que
+                        pudermos!
                     </p>
-                    <p>
-                        A empresa tem como foco primordial realçar a beleza dos cabelos afro e promover a autoestima
-                        dos nossos estimados clientes. Inicialmente, começamos oferecendo serviços para cabelos afros naturais, mas ao longo do tempo, nos especializamos no cuidado e estilo das tranças,
-                        estabelecendo-nos como referência nesse tipo de penteado.
-                    </p>
-                    <p>
-                        Com o propósito de proporcionar uma experiência em que as pessoas possam enxergar diferentes versões de si mesmas e sentir-se verdadeiramente belas.
-                    </p>
-                    <p>
-                        A trajetória do cliente em nosso estabelecimento tem início com um atendimento personalizado, no qual fornecemos um orçamento sob medida, visando atender às suas necessidades específicas. Além
-                        disso, estamos buscando expandir nossa equipe com profissionais altamente capacitados em
-                        estética afro.
-                    </p>
-                    <p>
-                        Enfrentamos desafios em relação ao reconhecimento e valorização no mercado, mas estamos plenamente determinados a superá-los. Acreditamos firmemente que as tranças possuem uma história singular e estão em voga para todas as pessoas. Desejamos transmitir a mensagem de que a beleza
-                        afro é poderosa e merece ser apreciada em toda a sua plenitude.
-                    </p>
+                    <div class="campo">
+                        <label for="nome">
+                            Nome
+                        </label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="campoDuplo">
+                        <div class="campo">
+                            <label for="telefone">
+                                Telefone
+                            </label>
+                            <input type="tel" name="telefone" id="telefone" onkeydown="return mascaraTelefone(event)" required>
+                        </div>
+                        <div class="campo">
+                            <label for="email">
+                                Email
+                            </label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem">
+                            Mensagem
+                        </label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="campo">
+                        <button type="submit">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+                <div id="info">
+                    <h2>
+                        Mais Informações
+                    </h2>
+                    <div>
+                        <a href="https://www.instagram.com/gabrielle_santos_afro_hair/" class="info">
+                            <i class='bx bxl-instagram'></i>
+                            <p>
+                                @gabrielle_santos_afro_hair
+                            </p>
+                        </a>
+                        <a href="https://wa.me/5513981198993" class="info">
+                            <i class='bx bxl-whatsapp'></i>
+                            <p>
+                                (13) 98119 - 8993
+                            </p>
+                        </a>
+                        <a href="https://goo.gl/maps/C7QTpbVVz5sE3spt9?coh=178571&entry=tt" class="info">
+                            <i class='bx bx-map-alt'></i>
+                            <p>
+                                Rua Sebastião Brasil de Castro Rios, 100 - Loja 1 - Caneleira, Santos - SP, 11085-510
+                            </p>
+                        </a>
+                        <div class="info">
+                            <i class='bx bx-time-five'></i>
+                            <p>
+                                Segunda à Sabado
+                                <br>
+                                Das 9h às 19h
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

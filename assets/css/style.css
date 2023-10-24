@@ -11,6 +11,7 @@ body {
     bottom: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -160,6 +161,7 @@ main #header #top {
     align-items: center;
     justify-content: center;
     font-size: large;
+    z-index: 9999;
 }
 
 main #sobre {
@@ -222,6 +224,10 @@ main #sobre div:nth-of-type(2) p::first-letter {
     font-family: 'Marck Script', cursive;
     font-size: x-large;
     font-weight: bold;
+}
+
+main #servicos {
+    margin-top: 3rem;
 }
 
 main #servicos h1 {
@@ -329,8 +335,35 @@ main #servicos #areaServicos #button a:hover {
     background-color: var(--backgroundDark);
 }
 
-main #servicos #areaServicos #button{
+main #servicos #areaServicos #button {
     margin: 2rem 0;
+}
+
+main #servicos table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+main #servicos table caption {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+main #servicos table th, main #servicos table td {
+    padding: 12px;
+    text-align: left;
+}
+
+main #servicos table th {
+    background-color: #7c537e;
+    color: white;
+}
+
+main #servicos table tr:nth-child(even) {
+    background-color: #aa6cad34;
 }
 
 main #servicos h1,
@@ -398,7 +431,7 @@ main #cursos>div div:nth-of-type(2) img {
 }
 
 main #siganos {
-    padding: 1rem 5rem;
+    padding: 1rem 5rem 3rem;
     text-align: center;
 }
 
@@ -490,7 +523,7 @@ main #depoimentos>div {
     align-items: flex-start;
     gap: 30px;
     padding: 0 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: -1rem;
 }
 
 main #depoimentos>div .depoimento {
@@ -526,7 +559,8 @@ main #contato {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
 }
 
 main #contato>div {
@@ -664,6 +698,8 @@ main #contato>div #info .info p {
 footer {
     padding: 2rem 0 1rem;
     background-color: var(--background);
+    position: sticky;
+    top: 100%;
 }
 
 footer>div {
@@ -1017,6 +1053,11 @@ footer #desenvolvedores div a {
     main #sobre div:nth-of-type(2) p {
         font-size: large;
         margin-bottom: 1rem;
+    }
+
+    main #servicos table {
+        width: 100%;
+        margin: 2rem auto;
     }
 
     main #servicos #opcoes {

@@ -29,9 +29,10 @@
 </p>
 
 # 💻 Desenvolvedores
-- <a href="https://github.com/GeovannyDinizM/">Geovanny Diniz</a>
-- <a href="https://github.com/RaquelStefany/">Raquel Stefany</a>
-- <a href="https://github.com/valeria-ferreira/">Valéria Ferreira</a>
+- <a href="https://www.linkedin.com/in/geovannydinizmachado/">Geovanny Diniz</a>
+- <a href="https://www.linkedin.com/in/igorpinheiroo/">Igor Pinheiro</a>
+- <a href="https://www.linkedin.com/in/raquelstefany/">Raquel Stefany</a>
+- <a href="https://www.linkedin.com/in/valeria-nascimento-ferreira/">Valéria Ferreira</a>
 
 # 💻 Tecnologias
 <p>  
