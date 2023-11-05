@@ -6,6 +6,10 @@
     --backgroundDark: #44303C;
 }
 
+.longdesc{
+    display: none;
+}
+
 body {
     margin: 0;
     bottom: 0;
