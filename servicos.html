@@ -18,38 +18,48 @@
 <body>
     <header>
         <nav id="nav">
-            <a href="index.html">
-                <img src="assets/img/logo.png" alt="Logotipo do Afro Hair">
-                <h1>
-                    Afro Hair
-                </h1>
-            </a>
-            <input type="checkbox" name="menuButton" id="checkMenuButton">
-            <label for="checkMenuButton">
-                <i class='bx bx-menu'></i>
-            </label>
-            <ul>
-                <li>
-                    <a href="index.html" tabindex="1">
-                        Inicio
-                    </a>
-                </li>
-                <li>
-                    <a href="servicos.html" tabindex="2">
-                        Serviços
-                    </a>
-                </li>
-                <li>
-                    <a href="cursos.html" tabindex="3">
-                        Cursos
-                    </a>
-                </li>
-                <li>
-                    <a href="contato.html" tabindex="4">
-                        Contato
-                    </a>
-                </li>
-            </ul>
+            <div>
+                <a href="#header" id="conteudoPrincipal" tabindex="1">
+                    Ir para conteúdo principal
+                </a>
+            </div>
+            <div>
+                <a href="index.html">
+                    <img src="assets/img/logo.png" alt="Logotipo do Afro Hair">
+                    <h1>
+                        Afro Hair
+                    </h1>
+                </a>
+                <input type="checkbox" name="menuButton" id="checkMenuButton">
+                <label for="checkMenuButton">
+                    <i class='bx bx-menu'></i>
+                    <span hidden>
+                        Menu de Acesso
+                    </span>
+                </label>
+                <ul>
+                    <li>
+                        <a href="index.html" tabindex="2">
+                            Inicio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="servicos.html" tabindex="3">
+                            Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cursos.html" tabindex="4">
+                            Cursos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html" tabindex="5">
+                            Contato
+                        </a>
+                    </li>
+                </ul>                
+            </div>
         </nav>
     </header>
     <main>
@@ -59,16 +69,16 @@
             </a>
         </section>
         <section id="servicos">
-            <h1>
+            <h2>
                 -- Nossos Serviços --
-            </h1>
+            </h2>
             <div id="opcoes">
                 <input type="radio" name="servicos" id="trancas" checked>
-                <label for="trancas" onclick="tranca()">
+                <label for="trancas" onclick="tranca()" onkeydown="tranca()">
                     Tranças e Mais
                 </label>
                 <input type="radio" name="servicos" id="sobrancelhas">
-                <label for="sobrancelhas" onclick="sobrancelha()">
+                <label for="sobrancelhas" onclick="sobrancelha()" onkeydown="sobrancelha()">
                     Sobrancelhas
                 </label>
             </div>
@@ -250,9 +260,9 @@
             </div>
         </section>
         <section id="siganos">
-            <h1>
+            <h2>
                 -- Siga-nos --
-            </h1>
+            </h2>
             <h3>
                 Veja nosso conteúdo mais recente nas Redes Sociais
             </h3>
