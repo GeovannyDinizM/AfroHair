@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const listItem = document.createElement("li");
             listItem.innerHTML = `O campo <strong>Telefone</strong> está em um formato inválido.`;
             listItem.addEventListener("click", () => {
-                input.focus();
+                telefoneInput.focus();
             });
             errorList.appendChild(listItem);
         }
