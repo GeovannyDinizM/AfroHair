@@ -563,6 +563,37 @@ main #contato {
     margin-top: 2rem;
 }
 
+main #contato .required{
+    color: red;
+    font-size: small;
+}
+
+main #contato .error {
+    border: 2px solid red;
+}
+
+main #contato #error-message {
+    display: none;
+    color: black;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+main #contato .error-message {
+    background-color: rgba(202, 184, 198, 0.58);
+    padding: 1rem 1rem 0rem;
+    border-radius: 10px;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 2rem;
+}
+
+main #contato .error-message strong{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #2208b4;
+}
+
 main #contato>div {
     display: flex;
     justify-content: space-between;

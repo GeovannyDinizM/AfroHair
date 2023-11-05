@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Afro Hair é um site comercial e informativo dedicado ao salão de beleza especializado em cabelos afro.">
+    <meta name="description"
+        content="Afro Hair é um site comercial e informativo dedicado ao salão de beleza especializado em cabelos afro.">
     <title>
         Contato - Afro Hair
     </title>
@@ -59,7 +60,7 @@
         </section>
         <section id="contato">
             <div>
-                <form action="https://formspree.io/f/mdovvpqy" method="post">
+                <form action="https://formspree.io/f/xbjeepna" method="post" id="contact-form">
                     <h1>
                         Entre em Contato
                     </h1>
@@ -67,31 +68,37 @@
                         Sinta-se livre para contactar-nos a qualquer hora. Nós entraremos em contato com você assim que
                         pudermos!
                     </p>
+                    <div id="error-message" class="error-message">
+                        Por favor, corrija os seguintes erros:<ul id="error-list"></ul>
+                    </div>
                     <div class="campo">
                         <label for="nome">
-                            Nome
+                            Nome e Sobrenome <span class="required">(obrigatório)</span>
                         </label>
-                        <input type="text" name="nome" id="nome" required>
+                        <input type="text" name="nome" id="nome" placeholder="Ex: John Don" aria-required="true">
                     </div>
                     <div class="campoDuplo">
                         <div class="campo">
                             <label for="telefone">
                                 Telefone
                             </label>
-                            <input type="tel" name="telefone" id="telefone" onkeydown="return mascaraTelefone(event)" required>
+                            <input type="tel" name="telefone" id="telefone" placeholder="Ex: (xx) xxxxx-xxxx"
+                                onkeydown="return mascaraTelefone(event)">
                         </div>
                         <div class="campo">
                             <label for="email">
-                                Email
+                                Email <span class="required">(obrigatório)</span>
                             </label>
-                            <input type="email" name="email" id="email" required>
+                            <input type="email" name="email" id="email" placeholder="Ex: email@email.com"
+                                aria-required="true">
                         </div>
                     </div>
                     <div class="campo">
                         <label for="mensagem">
-                            Mensagem
+                            Mensagem <span class="required">(obrigatório)</span>
                         </label>
-                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"
+                            placeholder="Insira aqui sua mensagem" aria-required="true"></textarea>
                     </div>
                     <div class="campo">
                         <button type="submit">
@@ -227,6 +234,7 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/form.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
