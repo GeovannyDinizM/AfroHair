@@ -574,7 +574,7 @@ main #contato {
 }
 
 main #contato .required {
-  color: red;
+  color: #9f00ff;
   font-size: small;
 }
 
