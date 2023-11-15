@@ -782,7 +782,6 @@ footer > div #social ul {
 }
 
 div #social ul li a i {
-  font-size: large;
   padding: 0.5rem;
   border: 1px solid;
   border-radius: 100px;
@@ -1083,7 +1082,7 @@ footer #desenvolvedores div a {
     text-align: center;
   }
 
-  main #header #top {
+  main #header #topo {
     width: 60px;
     height: 60px;
     font-size: xx-large;

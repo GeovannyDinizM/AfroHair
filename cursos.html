@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -19,13 +19,13 @@
     <header>
         <nav id="nav">
             <div>
-                <a href="#header" id="conteudoPrincipal" tabindex="1">
+                <a href="#cursos" id="conteudoPrincipal" tabindex="1" >
                     Ir para conteúdo principal
                 </a>
             </div>
             <div>
-                <a href="index.html">
-                    <img src="assets/img/logo.png" alt="Logotipo do Afro Hair">
+                <a href="index.html" aria-hidden="true" tabindex="-1">
+                    <img src="assets/img/logo.png" alt="">
                     <h1>
                         Afro Hair
                     </h1>
@@ -39,22 +39,22 @@
                 </label>
                 <ul>
                     <li>
-                        <a href="index.html" tabindex="2">
-                            Inicio
+                        <a href="index.html">
+                            Início
                         </a>
                     </li>
                     <li>
-                        <a href="servicos.html" tabindex="3">
+                        <a href="servicos.html">
                             Serviços
                         </a>
                     </li>
                     <li>
-                        <a href="cursos.html" tabindex="4">
+                        <a href="cursos.html">
                             Cursos
                         </a>
                     </li>
                     <li>
-                        <a href="contato.html" tabindex="5">
+                        <a href="contato.html">
                             Contato
                         </a>
                     </li>
@@ -63,14 +63,16 @@
         </nav>
     </header>
     <main>
-        <section id="header" style="padding: 0;">
-            <a href="#nav" id="top">
+
+        <div id="header" style="padding: 0;">
+            <a href="#nav" id="top" tabindex="-3">
                 <i class='bx bx-up-arrow-alt'></i>
             </a>
-        </section>
+        </div>
+        
         <section id="cursos">
             <div>
-                <div>
+                <div tabindex="0">
                     <h2>
                         -- Nosso Curso --
                     </h2>
@@ -91,23 +93,23 @@
                         enriquecedora e capacitadora.
                     </p>
                     <a href="https://wa.me/5513981198993">
-                        Quero Participar
+                        Quero participar do curso
                     </a>
                 </div>
                 <div>
                     <img src="assets/img/curso/01.jpg"
-                        alt="Imagem demonstrativa do que é ensina no Curso de Tranças disponibilizado e ensinado por Gabrielle.">
+                        alt="Imagem demonstrativa de Gabrielle treinando técnica no curso durante pandemia do COVID-19." tabindex="0">
                     <img src="assets/img/curso/02.webp"
-                        alt="Imagem demonstrativa do que é ensina no Curso de Tranças disponibilizado e ensinado por Gabrielle.">
+                        alt="Imagem demonstrativa de uma pessoa voluntária com as tranças finalizadas por Gabrielle." tabindex="0">
                     <img src="assets/img/curso/03.webp"
-                        alt="Imagem demonstrativa do que é ensina no Curso de Tranças disponibilizado e ensinado por Gabrielle.">
+                        alt="Imagem demonstrativa de uma segunda pessoa, também, voluntária com o cabelo finalizadas." tabindex="0">
                     <img src="assets/img/curso/04.jpg"
-                        alt="Imagem demonstrativa do que é ensina no Curso de Tranças disponibilizado e ensinado por Gabrielle.">
+                        alt="Foto de Gabrielle já aplicando seus métodos ensinados no curso, em uma cliente." tabindex="0">
                 </div>
             </div>
         </section>
         <section id="depoimentos">
-            <h2>
+            <h2 tabindex="0">
                 -- Depoimentos --
             </h2>
             <span>
@@ -116,7 +118,7 @@
                 </span>
             </span>
             <div>
-                <div class="depoimento">
+                <div class="depoimento" tabindex="0">
                     <h3>
                         @luahporto
                     </h3>
@@ -124,7 +126,7 @@
                         Você arrasou, e eu amei a finalização que suas mãos de fada fizeram. 🥰
                     </p>
                 </div>
-                <div class="depoimento">
+                <div class="depoimento" tabindex="0">
                     <h3>
                         @beatriz_faustino
                     </h3>
@@ -133,7 +135,7 @@
                         cortar ou não. ❤️
                     </p>
                 </div>
-                <div class="depoimento">
+                <div class="depoimento" tabindex="0">
                     <h3>
                         @danivilarinho_
                     </h3>
@@ -143,7 +145,7 @@
                 </div>
             </div>
         </section>
-        <section id="siganos">
+        <section id="siganos" tabindex="0">
             <h2>
                 -- Siga-nos --
             </h2>
@@ -162,13 +164,13 @@
     <footer>
         <div>
             <div id="logo">
-                <img src="assets/img/logo_transparente.png" alt="Logo Afro Hair">
+                <img src="assets/img/logo_transparente.png" alt="" tabindex="-4">
             </div>
             <div id="menu">
                 <ul>
                     <li>
                         <a href="index.html">
-                            Inicio
+                            Início
                         </a>
                     </li>
                     <li>
@@ -191,22 +193,22 @@
             <div id="social">
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/gabrielle_santos_afro_hair/">
+                        <a href="https://www.instagram.com/gabrielle_santos_afro_hair/" aria-label="Instagram">
                             <i class='bx bxl-instagram'></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://wa.me/5513981198993">
+                        <a href="https://wa.me/5513981198993" aria-label="whatsapp (telefone)">
                             <i class='bx bxl-whatsapp'></i>
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:gslam30stm@gmail.com">
+                        <a href="mailto:gslam30stm@gmail.com" aria-label="E-mail">
                             <i class='bx bx-envelope'></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://goo.gl/maps/C7QTpbVVz5sE3spt9?coh=178571&entry=tt">
+                        <a href="https://goo.gl/maps/C7QTpbVVz5sE3spt9?coh=178571&entry=tt" aria-label="Endereço (Google Maps)">
                             <i class='bx bx-map-alt'></i>
                         </a>
                     </li>
@@ -214,7 +216,7 @@
             </div>
         </div>
         <div id="desenvolvedores">
-            <span>
+            <span tabindex="0">
                 Desenvolvido por
             </span>
             <div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -19,13 +19,13 @@
     <header>
         <nav id="nav">
             <div>
-                <a href="#header" id="conteudoPrincipal" tabindex="1">
+                <a href="#tabela" id="conteudoPrincipal" tabindex="1">
                     Ir para conteúdo principal
                 </a>
             </div>
             <div>
-                <a href="index.html">
-                    <img src="assets/img/logo.png" alt="Logotipo do Afro Hair">
+                <a href="index.html" aria-hidden="true" tabindex="-1">
+                    <img src="assets/img/logo.png" alt="">
                     <h1>
                         Afro Hair
                     </h1>
@@ -40,7 +40,7 @@
                 <ul>
                     <li>
                         <a href="index.html" tabindex="2">
-                            Inicio
+                            Início
                         </a>
                     </li>
                     <li>
@@ -63,22 +63,17 @@
         </nav>
     </header>
     <main>
-        <section id="header" style="padding: 0;">
-            <a href="#nav" id="top">
-                <i class='bx bx-up-arrow-alt'></i>
-            </a>
-        </section>
         <section id="servicos">
-            <h2>
+            <h2 tabindex="6">
                 -- Nossos Serviços --
             </h2>
             <div id="opcoes">
                 <input type="radio" name="servicos" id="trancas" checked>
-                <label for="trancas" onclick="tranca()" onkeydown="tranca()">
-                    Tranças e Mais
+                <label for="trancas" onclick="tranca()" onkeydown="tranca()" tabindex="7">
+                    Tranças
                 </label>
                 <input type="radio" name="servicos" id="sobrancelhas">
-                <label for="sobrancelhas" onclick="sobrancelha()" onkeydown="sobrancelha()">
+                <label for="sobrancelhas" onclick="sobrancelha()" onkeydown="sobrancelha()" tabindex="14">
                     Sobrancelhas
                 </label>
             </div>
@@ -86,7 +81,7 @@
                 <div id="tranca">
                     <div class="servico">
                         <img src="assets/img/trancas/01.webp"
-                            alt="Finalização de Tranças Box em uma cliente que está em pé de costas, realizado por Gabrielle, com adereços coloridos. São tranças individuais e pequenas que são divididas em seções quadradas no couro cabeludo podendo ser longa e curtas, mas na foto é com cabelos longos. Adereços são prendedores diversos e coloridos em algumas dessas tranças individuais.">
+                            alt="Finalização de Tranças Box em uma cliente que está em pé de costas, realizado por Gabrielle, com adereços coloridos. São tranças individuais e pequenas que são divididas em seções quadradas no couro cabeludo podendo ser longa e curtas, mas na foto é com cabelos longos. Adereços são prendedores diversos e coloridos em algumas dessas tranças individuais." tabindex="8">
                         <div>
                             <h3>
                                 Trança #1
@@ -95,7 +90,7 @@
                     </div>
                     <div class="servico">
                         <img src="assets/img/trancas/02.webp"
-                            alt="Finalização de Tranças Box na cor lilás em uma cliente que está em pé de costas, realizado por Gabrielle, com alguns adereços coloridos. São tranças individuais e pequenas que são divididas em seções quadradas no couro cabeludo podendo ser longa e curtas, mas na foto é com cabelos longos.">
+                            alt="Finalização de Tranças Box na cor lilás em uma cliente que está em pé de costas, realizado por Gabrielle, com alguns adereços. São tranças individuais e pequenas que são divididas em seções quadradas no couro cabeludo podendo ser longa e curtas, mas na foto é com cabelos longos." tabindex="9">
                         <div>
                             <h3>
                                 Trança #2
@@ -104,7 +99,7 @@
                     </div>
                     <div class="servico">
                         <img src="assets/img/trancas/03.webp"
-                            alt="Finalização de Tranças Nagô em um cliente que está sentado usando uma blusa preta, realizado por Gabrielle. As Tranças Nagô são tranças rentes ao couro cabeludo que podem se estender desde a testa até a parte de trás da cabeça, próxima à nuca, ou também podem ser feitas até a metade da cabeça, deixando o restante do cabelo livre para outros penteados.">
+                            alt="Finalização de Tranças Nagô em um cliente que está sentado usando uma blusa preta, realizado por Gabrielle. As Tranças Nagô são tranças rentes ao couro cabeludo que podem se estender desde a testa até a parte de trás da cabeça, próxima à nuca, ou também podem ser feitas até a metade da cabeça, deixando o restante do cabelo livre para outros penteados." tabindex="10">
                         <div>
                             <h3>
                                 Trança #3
@@ -113,7 +108,7 @@
                     </div>
                     <div class="servico">
                         <img src="assets/img/trancas/04.webp"
-                            alt="Finalização de Tranças Box na cor marrom, com algumas mechas na cor roxa em uma cliente que está em pé de costas, realizado por Gabrielle. São tranças individuais e pequenas que são divididas em seções quadradas no couro cabeludo podendo ser longa e curtas, mas na foto é com cabelos longos.">
+                            alt="Finalização de Tranças Box na cor marrom, com algumas mechas na cor roxa em uma cliente que está em pé de costas, realizado por Gabrielle. São tranças individuais e pequenas que são divididas em seções quadradas no couro cabeludo podendo ser longa e curtas, mas na foto é com cabelos longos." tabindex="11">
                         <div>
                             <h3>
                                 Trança #4
@@ -122,7 +117,7 @@
                     </div>
                     <div class="servico">
                         <img src="assets/img/trancas/05.webp"
-                            alt="Finalização de Tranças Nagô em um cliente que está sentado usando uma blusa azul, realizado por Gabrielle. As Tranças Nagô são tranças rentes ao couro cabeludo que podem se estender desde a testa até a parte de trás da cabeça, próxima à nuca, ou também podem ser feitas até a metade da cabeça, deixando o restante do cabelo livre para outros penteados.">
+                            alt="Finalização de Tranças Nagô em um cliente que está sentado usando uma blusa azul, realizado por Gabrielle. As Tranças Nagô são tranças rentes ao couro cabeludo que podem se estender desde a testa até a parte de trás da cabeça, próxima à nuca, ou também podem ser feitas até a metade da cabeça, deixando o restante do cabelo livre para outros penteados." tabindex="12">
                         <div>
                             <h3>
                                 Trança #5
@@ -131,7 +126,7 @@
                     </div>
                     <div class="servico">
                         <img src="assets/img/trancas/06.webp"
-                            alt="Finalização de Tranças Box na cor preta, com algumas mechas na cor rosa claro em uma cliente que está em pé de costas, realizado por Gabrielle. São tranças individuais e pequenas que são divididas em seções quadradas no couro cabeludo podendo ser longa e curtas, mas na foto é com cabelos longos.">
+                            alt="Finalização de Tranças Box na cor preta, com algumas mechas na cor rosa claro em uma cliente que está em pé de costas, realizado por Gabrielle. São tranças individuais e pequenas que são divididas em seções quadradas no couro cabeludo podendo ser longa e curtas, mas na foto é com cabelos longos." tabindex="13">
                         <div>
                             <h3>
                                 Trança #6
@@ -142,7 +137,7 @@
                 <div id="sobrancelha" class="disable">
                     <div class="servico">
                         <img src="assets/img/sobrancelhas/01.webp"
-                            alt="Antes e depois de fazer as sobrancelhas em uma cliente de olhos pretos. A primeira foto mostra as sobrancelhas com mais pelos e desalinhadas, enquanto a segunda foto exibe o resultado final, com alinhamento e remoção do excesso de cabelos das sobrancelhas.">
+                            alt="Antes e depois de fazer as sobrancelhas em uma cliente de olhos pretos. A primeira foto mostra as sobrancelhas com mais pelos e desalinhadas, enquanto a segunda foto exibe o resultado final, com alinhamento e remoção do excesso de cabelos das sobrancelhas." tabindex="0">
                         <div>
                             <h3>
                                 Sobrancelha #1
@@ -151,7 +146,7 @@
                     </div>
                     <div class="servico">
                         <img src="assets/img/sobrancelhas/02.webp"
-                            alt="Antes e depois de fazer as sobrancelhas em uma cliente de olhos castanhos escuros. Na imagem, a cliente está parcialmente deitada usando uma touca de algodão descartável. A primeira foto mostra as sobrancelhas com mais pelos e desalinhadas, enquanto a segunda foto exibe o resultado final, com alinhamento e remoção do excesso de cabelos das sobrancelhas.">
+                            alt="Antes e depois de fazer as sobrancelhas em uma cliente de olhos castanhos escuros. Na imagem, a cliente está parcialmente deitada usando uma touca de algodão descartável. A primeira foto mostra as sobrancelhas com mais pelos e desalinhadas, enquanto a segunda foto exibe o resultado final, com alinhamento e remoção do excesso de cabelos das sobrancelhas." tabindex="0">
                         <div>
                             <h3>
                                 Sobrancelha #2
@@ -160,7 +155,7 @@
                     </div>
                     <div class="servico">
                         <img src="assets/img/sobrancelhas/03.webp"
-                            alt="Na imagem, a cliente está parcialmente deitada usando uma touca de algodão descartável. A primeira foto mostra as sobrancelhas com mais pelos e desalinhadas, enquanto a segunda foto exibe o resultado final, com alinhamento e remoção do excesso de cabelos das sobrancelhas.">
+                            alt="Na imagem, a cliente está parcialmente deitada usando uma touca de algodão descartável. A primeira foto mostra as sobrancelhas com mais pelos e desalinhadas, enquanto a segunda foto exibe o resultado final, com alinhamento e remoção do excesso de cabelos das sobrancelhas." tabindex="0">
                         <div>
                             <h3>
                                 Sobrancelha #3
@@ -169,7 +164,7 @@
                     </div>
                     <div class="servico">
                         <img src="assets/img/sobrancelhas/04.webp"
-                            alt="Na imagem, a cliente está parcialmente deitada usando uma touca de algodão descartável. A primeira foto mostra as sobrancelhas com mais pelos e desalinhadas, enquanto a segunda foto exibe o resultado final, com alinhamento e remoção do excesso de cabelos das sobrancelhas.">
+                            alt="Na imagem, a cliente está parcialmente deitada usando uma touca de algodão descartável. A primeira foto mostra as sobrancelhas com mais pelos e desalinhadas, enquanto a segunda foto exibe o resultado final, com alinhamento e remoção do excesso de cabelos das sobrancelhas." tabindex="0">
                         <div>
                             <h3>
                                 Sobrancelha #4
@@ -178,7 +173,7 @@
                     </div>
                     <div class="servico">
                         <img src="assets/img/sobrancelhas/05.webp"
-                            alt="Antes e depois de fazer as sobrancelhas em um cliente de cabelos claros. A primeira foto mostra as sobrancelhas com mais pelos e desalinhadas, enquanto a segunda foto exibe o resultado final, com alinhamento e remoção do excesso de cabelos das sobrancelhas.">
+                            alt="Antes e depois de fazer as sobrancelhas em um cliente de cabelos claros. A primeira foto mostra as sobrancelhas com mais pelos e desalinhadas, enquanto a segunda foto exibe o resultado final, com alinhamento e remoção do excesso de cabelos das sobrancelhas." tabindex="0">
                         <div>
                             <h3>
                                 Sobrancelha #5
@@ -187,7 +182,7 @@
                     </div>
                     <div class="servico">
                         <img src="assets/img/sobrancelhas/06.webp"
-                            alt="Na imagem, a cliente está parcialmente deitada usando uma touca de algodão descartável. A primeira foto mostra as sobrancelhas com mais pelos e desalinhadas, enquanto a segunda foto exibe o resultado final, com alinhamento e remoção do excesso de cabelos das sobrancelhas.">
+                            alt="Na imagem, a cliente está parcialmente deitada usando uma touca de algodão descartável. A primeira foto mostra as sobrancelhas com mais pelos e desalinhadas, enquanto a segunda foto exibe o resultado final, com alinhamento e remoção do excesso de cabelos das sobrancelhas." tabindex="0">
                         <div>
                             <h3>
                                 Sobrancelha #6
@@ -195,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-                <table>
+                <table tabindex="0" id="tabela">
                     <caption>Lista de Tranças Disponíveis</caption>
                     <thead>
                         <tr>
@@ -254,12 +249,19 @@
                 </table>
                 <div id="button">
                     <a href="https://wa.me/c/5513981198993">
-                        Ver Mais
+                        Entrar em contato para mais Informações
                     </a>
                 </div>
             </div>
         </section>
-        <section id="siganos">
+
+        <div id="header" style="padding: 0;">
+            <a href="#nav" id="top" tabindex="-3">
+                <i class='bx bx-up-arrow-alt'></i>
+            </a>
+        </div>
+
+        <section id="siganos" tabindex="0">
             <h2>
                 -- Siga-nos --
             </h2>
@@ -278,13 +280,13 @@
     <footer>
         <div>
             <div id="logo">
-                <img src="assets/img/logo_transparente.png" alt="Logo Afro Hair">
+                <img src="assets/img/logo_transparente.png" alt="Logo Afro Hair" tabindex="-4">
             </div>
             <div id="menu">
                 <ul>
                     <li>
                         <a href="index.html">
-                            Inicio
+                            Início
                         </a>
                     </li>
                     <li>
@@ -307,22 +309,22 @@
             <div id="social">
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/gabrielle_santos_afro_hair/">
+                        <a href="https://www.instagram.com/gabrielle_santos_afro_hair/" aria-label="Instagram">
                             <i class='bx bxl-instagram'></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://wa.me/5513981198993">
+                        <a href="https://wa.me/5513981198993" aria-label="whatsapp (telefone)">
                             <i class='bx bxl-whatsapp'></i>
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:gslam30stm@gmail.com">
+                        <a href="mailto:gslam30stm@gmail.com" aria-label="E-mail">
                             <i class='bx bx-envelope'></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://goo.gl/maps/C7QTpbVVz5sE3spt9?coh=178571&entry=tt">
+                        <a href="https://goo.gl/maps/C7QTpbVVz5sE3spt9?coh=178571&entry=tt" aria-label="Endereço (Google Maps)">
                             <i class='bx bx-map-alt'></i>
                         </a>
                     </li>
@@ -330,7 +332,7 @@
             </div>
         </div>
         <div id="desenvolvedores">
-            <span>
+            <span tabindex="0">
                 Desenvolvido por
             </span>
             <div>

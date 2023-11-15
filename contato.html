@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -15,16 +15,16 @@
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 </head>
 
-<body>
+<body> 
     <header>
         <nav id="nav">
             <div>
-                <a href="#header" id="conteudoPrincipal" tabindex="1">
+                <a href="#contato" id="conteudoPrincipal" tabindex="1">
                     Ir para conteúdo principal
                 </a>
             </div>
             <div>
-                <a href="index.html">
+                <a href="index.html" aria-hidden="true" tabindex="-1">
                     <img src="assets/img/logo.png" alt="Logotipo do Afro Hair">
                     <h1>
                         Afro Hair
@@ -39,22 +39,22 @@
                 </label>
                 <ul>
                     <li>
-                        <a href="index.html" tabindex="2">
-                            Inicio
+                        <a href="index.html">
+                            Início
                         </a>
                     </li>
                     <li>
-                        <a href="servicos.html" tabindex="3">
+                        <a href="servicos.html">
                             Serviços
                         </a>
                     </li>
                     <li>
-                        <a href="cursos.html" tabindex="4">
+                        <a href="cursos.html">
                             Cursos
                         </a>
                     </li>
                     <li>
-                        <a href="contato.html" tabindex="5">
+                        <a href="contato.html">
                             Contato
                         </a>
                     </li>
@@ -63,43 +63,45 @@
         </nav>
     </header>
     <main>
-        <section id="header" style="padding: 0;">
-            <a href="#nav" id="top">
+
+        <div id="header" style="padding: 0;">
+            <a href="#nav" id="top" tabindex="-3">
                 <i class='bx bx-up-arrow-alt'></i>
             </a>
-        </section>
+        </div>
+        
         <section id="contato">
             <div>
                 <form action="https://formspree.io/f/xbjeepna" method="post" id="contact-form">
-                    <h2>
+                    <h2 tabindex="0">
                         Entre em Contato
                     </h2>
                     <p>
                         Sinta-se livre para contactar-nos a qualquer hora. Nós entraremos em contato com você assim que
                         pudermos!
                     </p>
-                    <div id="error-message" class="error-message">
+                    <div id="error-message" class="error-message" tabindex="0">
                         Por favor, corrija os seguintes erros:<ul id="error-list"></ul>
                     </div>
                     <div class="campo">
                         <label for="nome">
                             Nome e Sobrenome <span class="required">(obrigatório)</span>
                         </label>
-                        <input type="text" name="nome" id="nome" placeholder="Ex: John Don" aria-required="true">
+                        <input type="text" name="nome" id="nome" placeholder="Exemplo: João Vitor" aria-required="true">
                     </div>
                     <div class="campoDuplo">
                         <div class="campo">
                             <label for="telefone">
                                 Telefone
                             </label>
-                            <input type="tel" name="telefone" id="telefone" placeholder="Ex: (xx) xxxxx-xxxx"
-                                onkeydown="return mascaraTelefone(event)">
+                            <input type="tel" name="telefone" id="telefone" placeholder="Exemplo: (13) 9 98120-1030"
+                                maxlength="11" minlength="10">
                         </div>
                         <div class="campo">
                             <label for="email">
                                 Email <span class="required">(obrigatório)</span>
                             </label>
-                            <input type="email" name="email" id="email" placeholder="Ex: email@email.com"
+                            <input type="email" name="email" id="email" placeholder="Exemplo: seue-mail@domínio.com"
                                 aria-required="true">
                         </div>
                     </div>
@@ -108,7 +110,7 @@
                             Mensagem <span class="required">(obrigatório)</span>
                         </label>
                         <textarea name="mensagem" id="mensagem" cols="30" rows="10"
-                            placeholder="Insira aqui sua mensagem" aria-required="true"></textarea>
+                            placeholder="Exemplo: Gostaria de solicitar um orçamento." aria-required="true"></textarea>
                     </div>
                     <div class="campo">
                         <button type="submit">
@@ -117,7 +119,7 @@
                     </div>
                 </form>
                 <div id="info">
-                    <h2>
+                    <h2 tabindex="0">
                         Mais Informações
                     </h2>
                     <div>
@@ -130,28 +132,30 @@
                         <a href="https://wa.me/5513981198993" class="info">
                             <i class='bx bxl-whatsapp'></i>
                             <p>
-                                (13) 98119 - 8993
+                                Contato: (13) 9 8119-8993
                             </p>
                         </a>
                         <a href="https://goo.gl/maps/C7QTpbVVz5sE3spt9?coh=178571&entry=tt" class="info">
                             <i class='bx bx-map-alt'></i>
                             <p>
-                                Rua Sebastião Brasil de Castro Rios, 100 - Loja 1 - Caneleira, Santos - SP, 11085-510
+                                Endereço: Rua Sebastião Brasil de Castro Rios, 100 - Loja 1 - Caneleira, Santos - SP, 11085-510.
                             </p>
                         </a>
-                        <div class="info">
+                        <div tabindex="0" class="info">
                             <i class='bx bx-time-five'></i>
                             <p>
-                                Segunda à Sabado
+                                Horário de funcionamento:
                                 <br>
-                                Das 9h às 19h
+                                Segunda à Sábado.
+                                <br>
+                                Das 9h às 19h.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="siganos">
+        <section id="siganos" tabindex="0">
             <h2>
                 -- Siga-nos --
             </h2>
@@ -170,13 +174,13 @@
     <footer>
         <div>
             <div id="logo">
-                <img src="assets/img/logo_transparente.png" alt="Logo Afro Hair">
+                <img src="assets/img/logo_transparente.png" alt="Logo Afro Hair" tabindex="-3">
             </div>
             <div id="menu">
                 <ul>
                     <li>
                         <a href="index.html">
-                            Inicio
+                            Início
                         </a>
                     </li>
                     <li>
@@ -199,22 +203,22 @@
             <div id="social">
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/gabrielle_santos_afro_hair/">
+                        <a href="https://www.instagram.com/gabrielle_santos_afro_hair/" aria-label="Instagram">
                             <i class='bx bxl-instagram'></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://wa.me/5513981198993">
+                        <a href="https://wa.me/5513981198993" aria-label="whatsapp (telefone)">
                             <i class='bx bxl-whatsapp'></i>
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:gslam30stm@gmail.com">
+                        <a href="mailto:gslam30stm@gmail.com" aria-label="E-mail">
                             <i class='bx bx-envelope'></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://goo.gl/maps/C7QTpbVVz5sE3spt9?coh=178571&entry=tt">
+                        <a href="https://goo.gl/maps/C7QTpbVVz5sE3spt9?coh=178571&entry=tt" aria-label="Endereço (Google Maps)">
                             <i class='bx bx-map-alt'></i>
                         </a>
                     </li>
@@ -222,7 +226,7 @@
             </div>
         </div>
         <div id="desenvolvedores">
-            <span>
+            <span tabindex="0">
                 Desenvolvido por
             </span>
             <div>

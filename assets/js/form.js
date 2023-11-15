@@ -49,23 +49,30 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
+        
+        //Obrigar o usuário digitar a formato correto de telefone, não é viavel, não deixa navegar com o tab
+       /* 
         const telefoneInput = document.getElementById("telefone");
         const telefoneValue = telefoneInput.value.trim();
         if (telefoneValue && !/^\(\d{2}\)\s\d{4,5}-\d{4}$/.test(telefoneValue)) {
             telefoneInput.classList.add("error");
             hasError = true;
+
             const listItem = document.createElement("li");
             listItem.innerHTML = `O campo <strong>Telefone</strong> está em um formato inválido.`;
             listItem.addEventListener("click", () => {
                 telefoneInput.focus();
-            });
+             });
             errorList.appendChild(listItem);
         }
+        */
 
-        if (hasError) {
-            event.preventDefault();
-            const errorMessage = document.getElementById("error-message");
-            errorMessage.style.display = "grid";
-        }
+         if (hasError) {
+             event.preventDefault();
+             const errorMessage = document.getElementById("error-message");
+             errorMessage.style.display = "grid";
+            }
+
+
     });
 });
